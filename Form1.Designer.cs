@@ -32,7 +32,7 @@
             btnGuardar = new Button();
             rdBlue = new RadioButton();
             rdRed = new RadioButton();
-            rdOrange = new RadioButton();
+            rdYellow = new RadioButton();
             gbColors = new GroupBox();
             btnLimpiar = new Button();
             ((System.ComponentModel.ISupportInitialize)pbFirma).BeginInit();
@@ -79,20 +79,20 @@
             rdRed.Text = "Red";
             rdRed.UseVisualStyleBackColor = true;
             // 
-            // rdOrange
+            // rdYellow
             // 
-            rdOrange.AutoSize = true;
-            rdOrange.Location = new Point(6, 70);
-            rdOrange.Name = "rdOrange";
-            rdOrange.Size = new Size(64, 19);
-            rdOrange.TabIndex = 4;
-            rdOrange.TabStop = true;
-            rdOrange.Text = "Orange";
-            rdOrange.UseVisualStyleBackColor = true;
+            rdYellow.AutoSize = true;
+            rdYellow.Location = new Point(6, 70);
+            rdYellow.Name = "rdYellow";
+            rdYellow.Size = new Size(59, 19);
+            rdYellow.TabIndex = 4;
+            rdYellow.TabStop = true;
+            rdYellow.Text = "Yellow";
+            rdYellow.UseVisualStyleBackColor = true;
             // 
             // gbColors
             // 
-            gbColors.Controls.Add(rdOrange);
+            gbColors.Controls.Add(rdYellow);
             gbColors.Controls.Add(rdBlue);
             gbColors.Controls.Add(rdRed);
             gbColors.Location = new Point(580, 3);
@@ -135,7 +135,7 @@
         private Button btnGuardar;
         private RadioButton rdBlue;
         private RadioButton rdRed;
-        private RadioButton rdOrange;
+        private RadioButton rdYellow;
         private GroupBox gbColors;
         private Button btnLimpiar;
     }
