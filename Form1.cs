@@ -51,7 +51,7 @@ namespace pryFirma
         {
             DateTime FECHAHORA_ACTUAL = DateTime.Now;
             string NOMBRE_ARCHIVO = $"Firma_{FECHAHORA_ACTUAL:yyyy.MM.dd}_{FECHAHORA_ACTUAL:HH.mm}hrs.jpg";
-            string CARPETA_GUARDADO = @"C:\Users\Mauri\source\repos\pryFirma\bin\Debug\net6.0-windows\Firmas";
+            string CARPETA_GUARDADO = Path.Combine(Application.StartupPath, "Firmas");
             string RUTA_ARCHIVO = Path.Combine(CARPETA_GUARDADO, NOMBRE_ARCHIVO);
 
             // Asegúrate de que la carpeta exista
