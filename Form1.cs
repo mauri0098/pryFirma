@@ -29,11 +29,11 @@ namespace pryFirma
                 }
                 pbFirma.Image = imagen;
             }
-            else if (e.Button == MouseButtons.Left && rdYellow.Checked == true)
+            else if (e.Button == MouseButtons.Left && rdOrange.Checked == true)
             {
                 using (Graphics objetoLoco = Graphics.FromImage(imagen))
                 {
-                    objetoLoco.FillEllipse(Brushes.Yellow, e.X, e.Y, 5, 5);
+                    objetoLoco.FillEllipse(Brushes.Orange, e.X, e.Y, 5, 5);
                 }
                 pbFirma.Image = imagen;
             }
