@@ -123,6 +123,7 @@
             Controls.Add(btnGuardar);
             Controls.Add(pbFirma);
             Name = "frmFirma";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Firma";
             ((System.ComponentModel.ISupportInitialize)pbFirma).EndInit();
             gbColors.ResumeLayout(false);
