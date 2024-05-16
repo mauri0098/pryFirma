@@ -43,8 +43,27 @@ namespace pryFirma
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            imagen = new Bitmap(pbFirma.Width, pbFirma.Height); // Crea una nueva imagen en blanco
-            pbFirma.Image = imagen; // Asigna la nueva imagen al PictureBox
+            imagen = new Bitmap(pbFirma.Width, pbFirma.Height); 
+            pbFirma.Image = imagen; 
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            DateTime FECHAHORA_ACTUAL = DateTime.Now;
+            string NOMBRE_ARCHIVO = $"Firma_{FECHAHORA_ACTUAL:yyyy.MM.dd}_{FECHAHORA_ACTUAL:HH.mm}hrs.jpg";
+            string CARPETA_GUARDADO = @"C:\Users\Mauri\source\repos\pryFirma\bin\Debug\net6.0-windows\Firmas";
+            string RUTA_ARCHIVO = Path.Combine(CARPETA_GUARDADO, NOMBRE_ARCHIVO);
+
+            // Asegúrate de que la carpeta exista
+            if (!Directory.Exists(CARPETA_GUARDADO))
+            {
+                Directory.CreateDirectory(CARPETA_GUARDADO);
+            }
+
+            imagen.Save(RUTA_ARCHIVO, System.Drawing.Imaging.ImageFormat.Jpeg);
+            MessageBox.Show("La firma ha sido guardada exitosamente.");
+            this.Close();
+
         }
     }
 }
