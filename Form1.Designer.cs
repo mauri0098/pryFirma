@@ -50,7 +50,7 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(583, 161);
+            btnGuardar.Location = new Point(580, 161);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(81, 34);
             btnGuardar.TabIndex = 1;
@@ -105,7 +105,7 @@
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(583, 119);
+            btnLimpiar.Location = new Point(580, 119);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(81, 36);
             btnLimpiar.TabIndex = 6;
@@ -117,7 +117,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(676, 364);
+            ClientSize = new Size(665, 364);
             Controls.Add(btnLimpiar);
             Controls.Add(gbColors);
             Controls.Add(btnGuardar);
